@@ -1,2 +1,5 @@
 # Sollution-Challenge-KamerInnov
-Salut, Notre projet est dans un thème communautaire. Dans notre pays, on rencontre souvent des dépôts d'ordures aux bords des routes, sans présence de bacs a ordures, soit du a un délestage de la compagnie gérant ce domaine, soit du a une distance très éloigné des bacs pour la population. Pour régler ce problème, nous avons développer une application web permettant a un utilisateur lambda de pouvoir signaler ces dépôts d'ordures a la compagnie responsable, afin qu'elle puisse y poser bacs.  Il en ai de même pour des poteaux électriques défectueux et dangereux pour la population, mais également pour l'absence de lampadaires dans certaines rues, causant des insécurités
+Hi,
+Our project is in a community theme. In our country, we often encounter garbage deposits on the roadsides, without the presence of garbage bins, either due to the company managing this area, or due to a very distant distance from the bins for the population. To solve this problem, we have developed a web application that allows an ordinary user to report these garbage deposits to the responsible company, so that it can put bins there. 
+The same goes for defective electric poles that are dangerous for the population, but also for the absence of street lights in some streets, causing insecurity.
+
