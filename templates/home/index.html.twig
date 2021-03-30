@@ -1,0 +1,304 @@
+{% extends "layouts/base.html.twig" %}
+
+{% block googleMap %}
+
+<script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+ <script>
+      var map;
+      function initialize() {
+        // Get all map canvas with ".maps" and store them to a variable.
+        var maps = document.getElementsByClassName("maps");
+
+        var ids, gps, mapId = '';
+
+        // Loop: Explore all elements with ".maps" and create a new Google Map object for them
+        for(var i=0; i<maps.length; i++) {
+
+          // Get ID of single div
+          mapId = document.getElementById(maps[i].id);
+
+          // Get LatLng stored in data attribute. 
+          // !!! Make sure there is no space in data-attribute !!!
+          // !!! and the values are separated with comma !!!
+          gps = mapId.getAttribute('data-gps');
+
+          // Convert LatLng to an array
+          gps = gps.split(",");
+
+          // Create new Google Map object for single canvas 
+          map = new google.maps.Map(mapId, {
+            zoom: 15,
+            // Use our LatLng array bellow
+            center: new google.maps.LatLng(parseFloat(gps[0]), parseFloat(gps[1])),
+            mapTypeId: 'roadmap',
+            mapTypeControl: true,
+            zoomControlOptions: {
+                position: google.maps.ControlPosition.RIGHT_TOP
+            }
+          });
+
+          // Create new Google Marker object for new map
+          var marker = new google.maps.Marker({
+            // Use our LatLng array bellow
+            position: new google.maps.LatLng(parseFloat(gps[0]), parseFloat(gps[1])),
+            map: map
+          });
+        }
+      }
+  </script>
+{% endblock googleMap %}
+
+{% block body %}
+<div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container slide-overlay"
+data-alias="classic4export" data-source="gallery">
+
+<!-- START REVOLUTION SLIDER 5.4.8 auto mode -->
+<div id="rev_slider_4_1" class="rev_slider fullwidthabanner" data-version="5.4.8.1">
+    <ul>
+        <li data-index="rs-3" data-transition="slotslide-horizontal" data-slotamount="default"
+            data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default"
+            data-masterspeed="default" data-rotate="0" data-saveperformance="off" data-title="Slide"
+            data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
+            data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+
+            <img src="images/page-title-bg.jpg" alt="" title="slider-mainbg-001"
+                data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
+                class="rev-slidebg" data-no-retina>
+
+            <div class="tp-caption tp-resizeme" id="slide-3-layer-1"
+                data-x="['left','left','center','center']" data-hoffset="['50','40','0','0']"
+                data-y="['top','top','middle','middle']" data-voffset="['169','179','-136','-86']"
+                data-fontsize="['18','18','15','12']" data-lineheight="['20','20','20','15']"
+                data-fontweight="['200','200','200','200']"
+                data-color="['rgb(242, 244, 248)','rgb(242, 244, 248)','rgb(242, 244, 248)','rgb(242, 244, 248)']"
+                data-letterspacing="['3','3','3','3']" data-width="none" data-height="none"
+                data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                data-frames='[{"delay":130,"speed":400,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">
+                BIENVENUE A KAMERINOV </div>
+
+            <div class="tp-caption tp-resizeme" id="slide-3-layer-2"
+                data-x="['left','left','center','center']" data-hoffset="['49','39','0','0']"
+                data-y="['top','top','middle','middle']" data-voffset="['189','199','-83','-44']"
+                data-fontsize="['75','75','60','40']" data-lineheight="['100','100','80','50']"
+                data-fontweight="['600','600','600','600']"
+                data-color="['rgb(242, 244, 248)','rgb(242, 244, 248)','rgb(242, 244, 248)','rgb(242, 244, 248)']"
+                data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                data-responsive_offset="on"
+                data-frames='[{"delay":350,"speed":800,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">
+                <P style="font-size: 40px;">VENIR EN AIDE A LA <strong
+                        class="ttm-textcolor-skincolor">COMMUNITÉ URBAINE DU CAMEROUN</strong> </P>
+            </div>
+
+            <div class="tp-caption tp-resizeme" id="slide-3-layer-3"
+                data-x="['left','left','center','center']" data-hoffset="['50','40','0','0']"
+                data-y="['top','top','top','top']" data-voffset="['271','281','170','156']"
+                data-fontsize="['75','75','60','40']" data-lineheight="['100','100','80','50']"
+                data-fontweight="['600','600','600','600']"
+                data-color="['rgb(242, 244, 248)','rgb(242, 244, 248)','rgb(242, 244, 248)','rgb(242, 244, 248)']"
+                data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                data-responsive_offset="on"
+                data-frames='[{"delay":840,"speed":800,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">
+                </div>
+
+            <div class="tp-caption tp-resizeme" id="slide-3-layer-4"
+                data-x="['left','left','center','center']" data-hoffset="['50','40','-142','-473']"
+                data-y="['top','top','middle','middle']" data-voffset="['379','389','44','76']"
+                data-fontsize="['22','22','19','19']" data-lineheight="['30','30','25','25']"
+                data-color="['rgb(242, 244, 248)','rgb(242, 244, 248)','rgb(242, 244, 248)','rgb(242, 244, 248)']"
+                data-width="none" data-height="none" data-whitespace="nowrap"
+                data-visibility="['on','on','on','off']" data-type="text" data-responsive_offset="on"
+                data-frames='[{"delay":1500,"speed":400,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">
+                </div>
+
+            <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" id="slide-3-layer-5"
+                data-x="['left','left','center','center']" data-hoffset="['203','193','-65','-487']"
+                data-y="['top','top','middle','middle']" data-voffset="['390','400','46','42']"
+                data-width="10" data-height="10" data-borderradius="100" data-whitespace="nowrap"
+                data-visibility="['on','on','on','off']" data-type="shape" data-responsive_offset="on"
+                data-frames='[{"delay":1760,"speed":200,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">
+            </div>
+
+            <div class="tp-caption tp-resizeme" id="slide-3-layer-6"
+                data-x="['left','left','center','center']" data-hoffset="['231','221','0','-531']"
+                data-y="['top','top','middle','middle']" data-voffset="['379','389','45','118']"
+                data-fontsize="['22','22','19','19']" data-lineheight="['30','30','25','25']"
+                data-color="['rgb(242, 244, 248)','rgb(242, 244, 248)','rgb(242, 244, 248)','rgb(242, 244, 248)']"
+                data-width="none" data-height="none" data-whitespace="nowrap"
+                data-visibility="['on','on','on','off']" data-type="text" data-responsive_offset="on"
+                data-frames='[{"delay":1670,"speed":400,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">
+                propreté</div>
+
+            <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" id="slide-3-layer-8"
+                data-x="['left','left','center','center']" data-hoffset="['353','343','62','-473']"
+                data-y="['top','top','middle','middle']" data-voffset="['390','400','46','23']"
+                data-width="10" data-height="10" data-whitespace="nowrap"
+                data-visibility="['on','on','on','off']" data-type="shape" data-responsive_offset="on"
+                data-frames='[{"delay":2030,"speed":200,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">
+            </div>
+
+            <div class="tp-caption tp-resizeme" id="slide-3-layer-7"
+                data-x="['left','left','center','center']" data-hoffset="['382','372','125','-566']"
+                data-y="['top','top','middle','middle']" data-voffset="['379','389','45','59']"
+                data-fontsize="['22','22','19','19']" data-lineheight="['30','30','25','25']"
+                data-color="['rgb(242, 244, 248)','rgb(242, 244, 248)','rgb(242, 244, 248)','rgb(242, 244, 248)']"
+                data-width="none" data-height="none" data-whitespace="nowrap"
+                data-visibility="['on','on','on','off']" data-type="text" data-responsive_offset="on"
+                data-frames='[{"delay":1910,"speed":400,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">
+                bien-être</div>
+
+        </li>
+        <li data-index="rs-4" data-transition="slotslide-horizontal" data-slotamount="default"
+            data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default"
+            data-masterspeed="default" data-rotate="0" data-saveperformance="off" data-title="Slide"
+            data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
+            data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+
+            <img src="images/bg-pic-2.jpg" alt="" title="slider-mainbg-002" data-bgposition="center center"
+                data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+
+            <div class="tp-caption tp-resizeme" id="slide-4-layer-2"
+                data-x="['right','right','center','center']" data-hoffset="['50','40','0','0']"
+                data-y="['top','top','middle','middle']" data-voffset="['146','159','-153','-121']"
+                data-fontsize="['73','73','60','40']" data-lineheight="['100','100','80','50']"
+                data-fontweight="['600','600','600','600']"
+                data-color="['rgb(242, 244, 248)','rgb(242, 244, 248)','rgb(242, 244, 248)','rgb(242, 244, 248)']"
+                data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                data-responsive_offset="on"
+                data-frames='[{"delay":140,"speed":800,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">
+                <P style="font-size: 40px;"> PROTEGEONS <strong class="ttm-textcolor-skincolor">LA POPULATION DES INSECURITES</strong></P>
+            </div>
+
+            <div class="tp-caption tp-resizeme" id="slide-4-layer-3"
+                data-x="['right','right','center','center']" data-hoffset="['50','40','0','0']"
+                data-y="['top','top','top','top']" data-voffset="['226','242','98','74']"
+                data-fontsize="['73','73','60','40']" data-lineheight="['100','100','80','50']"
+                data-fontweight="['600','600','600','600']"
+                data-color="['rgb(242, 244, 248)','rgb(242, 244, 248)','rgb(242, 244, 248)','rgb(242, 244, 248)']"
+                data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                data-responsive_offset="on"
+                data-frames='[{"delay":560,"speed":800,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">
+                <p style="font-size: 30px;">Evitons les electrocutions et isecurité</p>
+            </div>
+
+            <div class="tp-caption tp-resizeme" id="slide-4-layer-11"
+                data-x="['right','right','center','center']" data-hoffset="['50','40','0','0']"
+                data-y="['top','top','middle','middle']" data-voffset="['327','342','-19','-25']"
+                data-fontsize="['29','29','30','20']" data-lineheight="['40','40','40','30']"
+                data-color="['rgb(242, 244, 248)','rgb(242, 244, 248)','rgb(242, 244, 248)','rgb(242, 244, 248)']"
+                data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                data-responsive_offset="on"
+                data-frames='[{"delay":1030,"speed":500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">
+                For Immediate Services Dial </div>
+        </li>
+    </ul>
+</div>
+</div>
+<!-- END REVOLUTION SLIDER -->
+
+    <!--site-main start-->
+    <div class="site-main">
+
+        <!--processbox-section-->
+        <section class="ttm-row processbox-section break-991-colum clearfix">
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <!-- section title -->
+                        <div class="section-title with-desc title-style-center_text clearfix">
+                            <div class="title-header">
+                                <h5>DES SOUCIS?</h5>
+                                <h2 class="title">SIGNALEZ UN PROBLÈME URBAIN</h2>
+                            </div>
+                        </div><!-- section title end -->
+                    </div>
+                    <div class="col-md-2"></div>
+                </div><!-- row end-->
+                <div class="row">
+                    <!-- row -->
+                    <div class="col-lg-12">
+                        <div class="ttm-processbox-wrapper">
+                            <div class="ttm-processbox">
+                                <div class="ttm-box-image">
+                                    <a href="{{path('app_junk_bin_signalization',{type: 'electric pole'})}}"><img class="img-fluid" src="images/poto-electrique.jpg" alt="step-one"
+                                        title="step-one"></a>
+                                    <div class="process-num">
+                                        <span class="number">1</span>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h5>Poteaux électriques défectueux</h5>
+                                    </div>
+                                    <div class="ttm-box-description">Protégez vos proches de tous les problèmes liés
+                                        au courant électrique</div>
+                                </div>
+                            </div>
+                            <div class="ttm-processbox">
+                                <div class="ttm-box-image">
+                                    <a href="{{path('app_junk_bin_signalization',{type: 'junkbin'})}}"><img class="img-fluid" src="images/image-bac-ordure.jpg" alt="step-two"
+                                        title="step-two"></a>
+                                    
+                                    <div class="process-num">
+                                        <span class="number">2</span>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h5>Abscence de bacs à ordures</h5>
+                                    </div>
+                                    <div class="ttm-box-description">Gardez votre espace de vie propre et agréable
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ttm-processbox">
+                                <div class="ttm-box-image">
+                                    <a href="{{path('app_junk_bin_signalization',{type: 'floorlamp'})}}">
+                                    <img class="img-fluid" src="images/lampadaire.jpg" alt="step-three"
+                                        title="step-three"></a>
+                                    <div class="process-num">
+                                        <span class="number">3</span>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h5>Abscence de lampadaires</h5>
+                                    </div>
+                                    <div class="ttm-box-description">Rendez votre quartier sécurisé et empéchez les
+                                        agréssions nocturnes</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- row end -->
+            </div>
+        </section>
+        <!--processbox-section end-->
+
+    </div><!--site-main end-->
+
+
+{% endblock body %}

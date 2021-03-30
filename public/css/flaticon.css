@@ -1,0 +1,92 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 24/01/2019 12:56
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticond41d.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff2") format("woff2"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: inherit;
+font-style: normal;
+}
+
+.flaticon-handyman-tools:before { content: "\f100"; }
+.flaticon-handy-man-worker-silhouette:before { content: "\f101"; }
+.flaticon-pipeline:before { content: "\f102"; }
+.flaticon-faucet:before { content: "\f103"; }
+.flaticon-tap:before { content: "\f104"; }
+.flaticon-pipe:before { content: "\f105"; }
+.flaticon-pipe-1:before { content: "\f106"; }
+.flaticon-pipe-2:before { content: "\f107"; }
+.flaticon-faucet-1:before { content: "\f108"; }
+.flaticon-electrician:before { content: "\f109"; }
+.flaticon-broken-cable:before { content: "\f10a"; }
+.flaticon-electrician-1:before { content: "\f10b"; }
+.flaticon-broken-cable-1:before { content: "\f10c"; }
+.flaticon-broken-cable-2:before { content: "\f10d"; }
+.flaticon-electrician-2:before { content: "\f10e"; }
+.flaticon-welder:before { content: "\f10f"; }
+.flaticon-welder-1:before { content: "\f110"; }
+.flaticon-welder-2:before { content: "\f111"; }
+.flaticon-welder-3:before { content: "\f112"; }
+.flaticon-welder-4:before { content: "\f113"; }
+.flaticon-welder-5:before { content: "\f114"; }
+.flaticon-welder-6:before { content: "\f115"; }
+.flaticon-window:before { content: "\f116"; }
+.flaticon-vacuum:before { content: "\f117"; }
+.flaticon-man-cleaning:before { content: "\f118"; }
+.flaticon-house:before { content: "\f119"; }
+.flaticon-lawn-mower:before { content: "\f11a"; }
+.flaticon-plumber:before { content: "\f11b"; }
+.flaticon-plumber-1:before { content: "\f11c"; }
+.flaticon-carpenter:before { content: "\f11d"; }
+.flaticon-carpenter-working:before { content: "\f11e"; }
+.flaticon-saw:before { content: "\f11f"; }
+.flaticon-carpenter-1:before { content: "\f120"; }
+.flaticon-worker-with-harness:before { content: "\f121"; }
+.flaticon-pliers:before { content: "\f122"; }
+.flaticon-electrician-3:before { content: "\f123"; }
+.flaticon-minisplit:before { content: "\f124"; }
+.flaticon-plumber-working:before { content: "\f125"; }
+.flaticon-paint-roller:before { content: "\f126"; }
+.flaticon-paint-palette-and-brush:before { content: "\f127"; }
+.flaticon-man-painting-wall:before { content: "\f128"; }
+.flaticon-man:before { content: "\f129"; }
+.flaticon-air-conditioner:before { content: "\f12a"; }
+.flaticon-maintenance:before { content: "\f12b"; }
+.flaticon-house-repair:before { content: "\f12c"; }
+.flaticon-circular-saw:before { content: "\f12d"; }
+.flaticon-trowel:before { content: "\f12e"; }
+.flaticon-wall:before { content: "\f12f"; }
+.flaticon-paint:before { content: "\f130"; }
+.flaticon-brick:before { content: "\f131"; }
+.flaticon-paint-roller-1:before { content: "\f132"; }
+.flaticon-pipe-3:before { content: "\f133"; }
+.flaticon-anvil:before { content: "\f134"; }
+.flaticon-hot-glue:before { content: "\f135"; }
+.flaticon-pipe-4:before { content: "\f136"; }
+.flaticon-level:before { content: "\f137"; }
+.flaticon-helmet:before { content: "\f138"; }
+.flaticon-worker-with-safety-helmet:before { content: "\f139"; }
+.flaticon-plumber-2:before { content: "\f13a"; }
+.flaticon-fan:before { content: "\f13b"; }
+.flaticon-paving:before { content: "\f13c"; }

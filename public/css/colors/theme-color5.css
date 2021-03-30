@@ -1,0 +1,181 @@
+/**
+  1. Color
+  2. Background-Color
+  3. Border-color
+**/
+
+
+/* ===============================================
+    Color
+------------------------*/
+a:hover,
+.ttm-textcolor-skincolor,
+.ttm-textcolor-white a:hover,
+.ttm-btn-color-skincolor,
+.ttm-btn.ttm-btn-color-skincolor,
+a.tp-caption.dark-text-button:hover,
+.ttm-textcolor-white.ttm-topbar-wrapper .social-icons li>a:hover,
+ul li .icon-box.icon-style-border i,
+.ttm-header-style-stackcenter .info-widget-content h2,
+.featured-imagebox-team .ttm-social-links-wrapper ul li a:hover,
+#site-header-menu #site-navigation .menu ul.dropdown > li.active > a, 
+#site-header-menu #site-navigation .menu ul.sub-menu > li.active > a,
+.ttm-header-style-overlay #site-header-menu #site-navigation .menu ul.dropdown > li.active > a,
+.ttm-header-style-overlay #site-header-menu #site-navigation .menu ul.dropdown > li:hover > a,
+#site-header-menu #site-navigation .menu ul > li:hover > a, 
+#site-header-menu #site-navigation .menu ul.sub-menu li > a:hover, 
+#site-navigation .menu ul > li:hover > a:before,
+.featured-imagebox .ttm-box-view-content-inner .featured-content .category,
+.featured-imagebox .ttm-box-view-content-inner .featured-content .category a,
+.featured-imagebox .ttm-box-view-content-inner .featured-content h2.featured-title a:hover,
+.ttm-icon_element-color-skincolor,
+.ttm-btn.ttm-btn-color-white:hover,
+.testimonial-slide .testimonials .testimonial-content label ,
+.ttm-team-details-list .ttm-team-list-title i,
+.ttm-fid.inside h4,
+.ttm-bgcolor-darkgrey .ttm-fid-view-righticon .ttm-fid-icon-wrapper i, 
+.ttm-fid-view-lefticon .ttm-fid-icon-wrapper i,
+.ttm-bgcolor-darkgrey .ttm-fid-view-righticon.inside h4, 
+.ttm-fid-view-lefticon.inside h4,
+.ttm-bgcolor-darkgrey .featured-title h6,
+.title-box .breadcrumb-wrapper span:last-child,
+ul.ttm-timelist-block li .service-time strong,
+.ttm-processbox-wrapper .ttm-processbox:hover .featured-title h5,
+.ttm-pricing-plan .ttm-ptablebox-price,
+.ttm-pricing-plan .ttm-ptablebox-cur-symbol-before,
+.ttm-pf-detailbox-list .ttm-pf-details-date i,
+.featured-imagebox-portfolio.ttm-box-view-top-image .featured-iconbox.ttm-media-link a:hover,
+.ttm-blog-classic .entry-header .ttm-meta-line,
+.ttm-blog-classic .entry-header .ttm-meta-line a,
+.ttm-blog-classic .ttm-blogbox-footer-readmore a,
+.ttm-box-view-left-image .featured-content .category> a,
+.featured-imagebox.ttm-box-view-left-image .featured-content .category> a,
+.sidebar .widget a:hover, .sidebar ul.contact-widget-wrapper li i,
+.products .product .price .product-Price-amount, 
+.products .product .star-ratings ,
+div.product .summary .price .Price-amount,
+div.product .summary .star-rating,
+.tp-caption.skin-flatborder-button,
+.featured-icon-box.style9 a.ttm-btn.ttm-btn-color-black:hover,
+.ttm-btn.btn-inline.ttm-btn-color-black:hover,
+.featured-imagebox-event .ttm-box-meta i{
+    color: #e31212;
+}
+
+h1.ttm-textcolor-skincolor, h2.ttm-textcolor-skincolor, h3.ttm-textcolor-skincolor, 
+h4.ttm-textcolor-skincolor, h5.ttm-textcolor-skincolor, h6.ttm-textcolor-skincolor {
+  color: #e31212 !important;
+}
+
+/* ===============================================
+    Background-Color
+------------------------*/
+.ttm-bgcolor-skincolor,
+.ttm-bgcolor-skincolor > .ttm-bg-layer,
+.tp-shapewrapper, .ttm-bg-highlight-skin,
+.tp-caption.skin-flatborder-button:hover,
+.top-contact.ttm-highlight-left:after,
+.top-contact.ttm-highlight-right:after,
+.ttm-header-icons .ttm-header-cart-link span.number-cart,
+.ttm-header-icons .ttm-header-search-link a:hover,
+#site-navigation .menu ul.dropdown > li > a:before,
+#site-header-menu #site-navigation .menu ul li a span,
+.ttm-header-style-infostack #site-header-menu #site-navigation .menu > ul > li > a:before,
+.ttm-search-overlay .ttm-site-searchform button,
+.section-title .title-header:after,
+.section-title.title-style-center_text .title-header:after,
+.ttm-bgcolor-darkgrey .section-title .title-header:after,
+.ttm-icon_element-background-color-skincolor,
+.ttm-btn-bgcolor-skincolor,
+.ttm-tabs ul.tabs li.active a ,
+.ttm-portfolio-box-view-overlay .featured-content h2.featured-title:after,
+.ttm-progress-bar .progress .progress-bar.progress-bar-color-bar_skincolor,
+.newsletter-form input[type="submit"],
+.ttm-quote-form input[type="submit"],
+.widget .widget-title:after,
+.title-box .page-title-heading .title:before,
+.social-icons.circle li>a:hover,
+.ttm-btn-bgcolor-black:hover,
+.ttm-btn.ttm-btn-color-skincolor.ttm-btn-style-border:hover,
+#totop.top-visible,
+.ttm-processbox-wrapper .ttm-processbox:hover .process-num,
+.ttm-video-btn .ttm-btn-play,
+.accordion .toggle.toggle-title.ttm-style-classic.active .toggle-title,
+.accordion .ttm-style-classic.ttm-toggle-title-border.active .toggle-title,
+.featured-imagebox-portfolio.ttm-box-view-top-image:hover .ttm-box-bottom-content,
+.ttm-box-view-left-image .featured-content .category> a:hover,
+.featured-imagebox.ttm-box-view-left-image .featured-content .category> a:hover,
+.ttm-nextprev-bottom-nav .nav-next a, .ttm-nextprev-bottom-nav .nav-previous a,
+.ttm-tabs.ttm-tab-style-horizontal ul.tabs li.active a,
+.ttm-tabs.tabs-for-single-products ul.tabs li:hover a,
+.ttm-blog-classic .ttm-box-post-date,
+.widget.widget-nav-menu ul li a:after,
+.sidebar .widget_product_categories li span, .sidebar .widget-Categories li span,
+.ttm-pagination .page-numbers.current, .ttm-pagination .page-numbers:hover,
+.ttm-bgcolor-grey .ttm-pagination .page-numbers.current,
+.ttm-bgcolor-grey .ttm-pagination .page-numbers:hover,
+.mailchimp-inputbox button[type="submit"], 
+.sidebar .widget .tagcloud a:hover, .comment-list a.comment-reply-link,
+.single .ttm-team-member-view-default .ttm-social-links-wrapper ul li a:hover,
+a.checkout-button:hover, .coupon button:hover, .ttm-cart-form button:hover, .place-order button:hover,
+.testimonials .testimonial-content blockquote:after,
+.ttm-btn-play:after, .ttm-btn-play:before,
+.ttm-video-btn .ttm-video-btn-play,
+.ttm-video-btn .ttm-video-btn-play:before,
+.ttm-video-btn .ttm-video-btn-play:after,
+.featured-imagebox-team.style2:hover .ttm-team-box-view-overlay,
+.tp-caption.skin-flat-button, .skin-flat-button,.simple-text-box,
+.ttm-video-play-btn,
+.featured-imagebox-portfolio.ttm-box-view-top-image .featured-iconbox.ttm-media-link a,
+.ttm-tabs.ttm-tab-style-classic ul.tabs li.active:after,
+.tribe-events-back a,
+.tribe-events-cal-links a,
+.tribe-events-nav-next a,
+.color-trigger{
+    background-color: #e31212;
+}
+.skin-flat-button:hover{ background-color:rgba(227, 18, 18,0.88); border-color: rgba(227, 18, 18,0.88);  }
+.ttm-video-btn:hover .ttm-btn-play{ background-color:rgba(227, 18, 18,0.95);}
+
+/* ===============================================
+    Border-Color
+------------------------*/
+.ttm-btn.ttm-btn-color-skincolor.ttm-btn-style-border,
+.ttm-icon.ttm-icon_element-border.ttm-icon_element-color-skincolor,
+textarea:focus, 
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="datetime"]:focus, 
+input[type="datetime-local"]:focus, 
+input[type="date"]:focus, 
+input[type="month"]:focus, 
+input[type="time"]:focus, 
+input[type="week"]:focus, 
+input[type="number"]:focus, 
+input[type="email"]:focus, 
+input[type="url"]:focus, 
+input[type="search"]:focus, 
+input[type="tel"]:focus, 
+input[type="color"]:focus,
+.featured-icon-box.style7,
+.ttm-tabs.ttm-tab-style-classic ul.tabs li.active a,
+.newsletter-form input[type="email"]:focus , .social-icons.circle li>a:hover,
+.accordion .ttm-style-classic.ttm-toggle-title-border.active .toggle-title,
+.ttm-pf-single-content-wrapper-innerbox.ttm-pf-view-top-image .ttm-pf-single-detail-box .ttm-pf-detailbox,
+.sidebar .widget .tagcloud a:hover,
+.tp-caption.skin-flat-button, .skin-flat-button,.tp-caption.skin-flatborder-button,
+.ttm-video-btn .ttm-btn-play, .ttm-btn-play:after, .ttm-btn-play:before {
+    border-color: #e31212  !important;
+}
+.ttm-search-overlay .w-search-form-row:before{
+    border-bottom-color: #e31212 ;
+}
+.ttm-search-overlay,
+#site-header-menu #site-navigation .menu > ul,
+#site-header-menu #site-navigation .menu > ul > li > ul,
+.ttm-rounded-shadow-box, div.product ul.tabs li.active a:before{
+  border-top-color: #e31212!important;
+}
+.featured-imagebox-portfolio.ttm-box-view-top-image:hover .ttm-box-bottom-content:before {
+    border-color: transparent transparent #e31212 transparent;
+}

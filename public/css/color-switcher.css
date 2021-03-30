@@ -1,0 +1,176 @@
+/*** 
+
+====================================================================
+	Color Switcher Style
+====================================================================
+
+***/
+
+.color-switcher {
+    position: fixed;
+    top: 185px;
+    left: -210px;
+    width: 210px;
+    background: #fff ;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+    z-index: 999;
+	-webkit-box-shadow: 0 0 17px 1px rgba(0, 0, 0, 0.1);
+	-ms-box-shadow: 0 0 17px 1px rgba(0, 0, 0, 0.1);
+	-o-box-shadow: 0 0 17px 1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 17px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 17px 1px rgba(0, 0, 0, 0.1);
+}
+.color-switcher .theme-color.active:before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 8px;
+    font-family: FontAwesome;
+    content: "\f00c";
+    color: #fff;
+    text-shadow: 0 0 1px rgba( 0, 0, 0, 1 );
+    z-index: 999;
+}
+.color-switcher-header{
+    background: #06163a;
+    padding: 11px 0 11px;
+}
+.color-switcher-header h6,
+.secondary-head h6 {
+    font-size: 14px;
+    font-weight: 400;
+	text-transform:uppercase;
+    color: #ffffff;
+    margin: 0;
+}
+.theme-color {
+    width: 25%;
+    background: #fda12b ;
+    display: block;
+    float: left;
+    height: 45px;
+    margin: 0 2.5% 10px;
+    cursor: pointer;
+    position: relative;
+}
+.various-color {
+    overflow: hidden;
+    padding: 25px 0 15px;
+}
+.colors-list {
+    margin: 0 -5px 0 15px;
+}
+.secondary-head {
+    background: #222222 ;
+    padding: 14px 0;
+}
+.secondary-color {
+    padding: 23px 0;
+}
+.secondary-colors-list {
+    margin: 0 80px;
+}
+.theme-color-foo {
+    color: #777777;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0px 30px 20px;
+	line-height:1.8em;
+	margin-top:16px;
+}
+.theme-color-foo span{
+	display:block;
+	padding-top:20px;
+	margin-top:5px;
+	border-top:1px dotted #b2b2b2;
+}
+.theme-color.default-color {
+    background: #fda12b ;
+}
+.theme-color.theme-color1 {
+    background: #fab702 ;
+}
+.theme-color.theme-color2 {
+    background: #ff5e14 ;
+}
+.theme-color.theme-color3 {
+    background: #EC6543 ;
+}
+.theme-color.theme-color4 {
+    background: #ff3300 ;
+}
+.theme-color.theme-color5 {
+    background: #e31212;
+}
+.color-trigger {
+    position: absolute;
+    top: 0;
+    height: 40px;
+    right: -40px;
+    width: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    background: #13b5ea;
+
+}
+.color-trigger:before{
+	content:'';
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+}
+.color-trigger i {
+    font-size: 20px;
+    line-height: 32px;
+    color: #ffffff;
+}
+.color-switcher.switcher-palate {
+    left: 0px;
+}
+.color-trigger .fa {
+	-webkit-animation: rotation 2s infinite linear;
+}
+@-webkit-keyframes rotation {
+	from {
+			-webkit-transform: rotate(0deg);
+	}
+	to {
+			-webkit-transform: rotate(359deg);
+	}
+}
+
+/*Boxed Layout Style*/
+.box-layout{
+    position: relative;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.20);
+}
+.box-layout:before{
+    position:fixed;
+    content: '';
+    left:0px;
+    top: 0px;
+    width: 100%;
+    height:100%;
+    display: block;
+    background: url(../images/background/5.html) no-repeat;
+}
+.box-layout .page{
+    background-color: #ffffff;
+    max-width:1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+.select-box{ padding: 0 20px; }
+.select-box > li{
+    display: block;
+    position: relative;
+    padding:6px 12px;
+    color:#ffffff;
+    background-color: #06163a;
+    text-transform:uppercase;
+    cursor: pointer;
+    margin-bottom: 9px;
+}
